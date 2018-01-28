@@ -1,12 +1,12 @@
 ---
 layout: default
 ---
-<h1>Weekly Challenges</h1>
-<ul>
+{% include header.html %}
+<h2>Weekly Challenges</h2>
+<p>Weekly Challenges are an initiative to ....</p>
+<div id="wcdiv">
     {% for wc in site.categories.weeklychallenge %}
-    <li>
-        <a href="{{site.baseurl}}{{wc.url}}">{{wc.title}}</a>
+        <a class="pagelink" href="{{site.baseurl}}{{wc.url}}">{{wc.title}}</a>
         <p>{{wc.about}}</p>
-    </li>
     {% endfor %}
-</ul>
+<div>

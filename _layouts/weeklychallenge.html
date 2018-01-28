@@ -1,10 +1,7 @@
-<html>
-<head>
-    <title>Weekly Challenge</title>
-    <link href="{{site.baseurl}}/css/style.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-    The weekly challenge is:
-    {{content}}
-</body>
-</html>
+---
+layout: default
+---
+{% include header.html %}
+
+<h2>Weekly Challenge #{{page.srno}}</h2>
+<p class="datetext">{{page.eventdate}}<p>
