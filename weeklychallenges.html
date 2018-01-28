@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<h1>Weekly Challenges</h1>
+<ul>
+    {% for wc in site.categories.weeklychallenge %}
+    <li>
+        <a href="{{site.baseurl}}{{wc.url}}">{{wc.title}}</a>
+        <p>{{wc.about}}</p>
+    </li>
+    {% endfor %}
+</ul>
