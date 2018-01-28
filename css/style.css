@@ -28,11 +28,11 @@ a:hover{
 .buttonlink:hover{
     color: #fffdff;
 }
-.pagelink{
+.pagelink, .problink{
     font-size: 1.2em;
     color:#68edc6;
 }
-.pagelink:hover{
+.pagelink:hover, .problink:hover{
     font-size: 1.2em;
     color:#68edc6;
 }
