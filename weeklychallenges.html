@@ -8,7 +8,7 @@ layout: default
 <p class="bio"> We encourage you to find, implement and test various solutions to these. Feel free to Google concepts you don't know and discuss with your friends! At the end of the week, <em>please fill the feedback form provided </em> so we know what we can do better!</p>
 </br>
 <div id="wcdiv">
-    {% for wc in site.categories.weeklychallenge %}
+    {% for wc in site.categories["weeklychallenge"] %}
         <a class="pagelink" href="{{site.baseurl}}{{wc.url}}">{{wc.title}}</a>
         <p>{{wc.about}}</p>
     {% endfor %}

@@ -1,0 +1,13 @@
+---
+layout: default
+---
+{% include header.html %}
+<h2>Weekly Challenges</h2>
+<p class="bio">Workshops are live coding sessions. Take these opportunities to try to solve the problems defined for the workshop, alongside other coders and with ready help nearby.</p>
+</br>
+<div id="wcdiv">
+    {% for w in site.categories["workshop"] %}
+        <a class="pagelink" href="{{site.baseurl}}{{w.url}}">{{w.title}}</a>
+        <p>{{w.about}}</p>
+    {% endfor %}
+<div>
